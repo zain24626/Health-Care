@@ -1,0 +1,2 @@
+# Health-Care
+The Laravel project about HEALTH CARE where patients can  Find , Consult Specialist Doctors and book appointment online all over the country.  Patients can know about the  latest medical news , medical science invention and common diseases. The Admin has access all doctors and patients personal information , the admin can UPDATE their personal information as well as Admin can Add/Remove Doctors and Patients.
