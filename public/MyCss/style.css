@@ -1,0 +1,260 @@
+#sec1text {
+  padding: 25px;
+  background-color: rgba(176, 195, 214, 0.76);
+  border-radius: 15px;
+  font-family: serif;
+  color: #f44718;
+
+}
+
+.inputstyle {
+  border-radius: 10px;
+
+}
+
+#sec1 {
+  margin-top: -350px;
+  /* margin-left: 50px; */
+
+}
+
+.searchbox {
+  box-shadow:
+    inset 5px 5px 8px #cbced1,
+    inset -5px -5px 8px #ffffff;
+}
+
+#sec2 {
+  margin-top: 250px;
+}
+
+#CommonDiseasesText {
+  font-family: serif;
+  color: #2d517b;
+
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f44718;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.zoom-computers {
+
+
+  transition: transform .5s;
+
+  margin: 0 auto;
+}
+
+.zoom-computers:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: -1;
+}
+
+#computer_text {
+  color: black;
+  text-decoration: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+
+.buttonBtn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: serif;
+  background: #fc5130;
+  /* height: 40px; */
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 5px 5px 8px #b1b1b1,
+    -5px -5px 8px #ffffff;
+  padding: 10px;
+
+}
+
+.buttonBtn:hover {
+  background: #1619C9;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+.sidebar {
+
+  position: fixed;
+  /* width: 250px; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* background: #111; */
+  padding-top: 50px;
+  width: 32%;
+}
+
+.sidebar h1 {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  font-family: "Rubik";
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: #bbb;
+  text-decoration: none;
+  font-family: "Rubik";
+  letter-spacing: 2px;
+}
+
+.sidebar a:hover {
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  transition: 0.4s;
+}
+
+/* 
+.active{
+  color: rgb(233, 31, 31);
+  margin-left: 20px;
+  transition: 0.4s;
+} */
+.jumbotron {
+  background-color: white;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.divshadow {
+  border-radius: 15px;
+}
+
+.divshadow:hover {
+  box-shadow: 7px 4px 16px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 7px 4px 16px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 7px 4px 16px 0px rgba(0, 0, 0, 0.45);
+
+}
+
+
+#cardText {
+  color: #4D74A8;
+  font-family: serif;
+}
+
+#cardDetails {
+  font-family: none;
+  color: #bbb;
+  font-size: medium;
+}
+
+.servicesIcon {
+  font-size: 65px;
+  color: #2d517b;
+}
+
+.contacticon {
+  font-size: 30px;
+  color: #2d517b
+}
+.button {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #fff;
+  ;
+  border: none;
+  color: #fc5130;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  /* width: 185px; */
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  /* border-top: 2px solid #fc5130; */
+  border-bottom: 2px solid #fc5130;
+  font-family: italic;
+  outline: none;
+}
+.button ::before { 
+  outline: none;
+  border: none;
+}
+
+.button ::selection { 
+  outline: none;
+  border: none;
+}
+.button:hover {
+  color: #2d517b;
+  /* border-top: 2px solid rgb(114, 114, 240); */
+  border-bottom: 2px solid #2d517b;
+}
+
+
+
+
+
+
+.picdiv {
+  background-image: url(/Index_Images/3.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+#anchor:hover{
+  color: #2d517b;
+  text-decoration: none;
+  /* border-top: 2px solid rgb(114, 114, 240); */
+  /* border-bottom: 2px solid #2d517b; */
+}
