@@ -72,7 +72,7 @@
                 <input type="text" class="form-control mt-5  searchbox" placeholder="Search...">
             </div>
             <div class="col-md-3">
-                <a href="#"> <button class="button w-50 mt-5 p-1"><i class="fa-solid fa-search icon"></i></button></a>
+                <a href="/search"> <button class="button w-50 mt-5 p-1"><i class="fa-solid fa-search icon"></i></button></a>
 
             </div>
 

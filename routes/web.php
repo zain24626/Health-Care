@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\HomeController;
+// use app\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,20 +36,40 @@ Route::get('/contact', function () {
 Route::get('/diseases', function () {
     return view('Diseases.Diseases');
 });
-    Route::get('/inventions', function () {
-        return view('Inventions.Inventions');
-    });
+Route::get('/inventions', function () {
+    return view('Inventions.Inventions');
+});
+Route::get('/search', function () {
+    return view('SearchedDoctors.SearchedDoctors');
+});
 
 Route::get('/register', function () {
     return view('auth.register');
 });
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/login', function () {
+    return view('auth.login');
+});
+Route::get('/dash', function () {
+    return view('Dashboard.Dashboard');
+});
+Route::get('/Appointment', function () {
+    return view('Appointment.Apointment');
+});
+Route::get('/schedule', function () {
+    return view('Schedule.Schedule');
+});
+Route::get('/info', function () {
+    return view('DoctorInfo.DoctorInfo');
+});
+Route::get('/registerasdoctor', function () {
+    return view('auth.RegisterAsDoctor.RegisterAsDoctor');
+});
+Route::get('/registeraspatient', function () {
+    return view('auth.RegisterAsPatient.RegisterAsPatient');
 });
 
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/dashboard', [App\Http\Controllers\AdminController::class, 'index'])->name('dash');
-// Route::post('/register', [App\Http\Controllers\UserController::class, 'create'])->name('register');
+// Route::get('/dash', [AdminController::class, 'index'])->name('dash');

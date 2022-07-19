@@ -96,7 +96,7 @@
                         @else
                             <a href="{{ route('register') }}" id="anchor"> <button id="button" type="submit">Sign
                                     Up</button> </a>
-                            <a href="" id="anchor"> <button id="button" type="submit">Sign In</button></a>
+                            <a href="{{ route('login') }}" id="anchor"> <button id="button" type="submit">Sign In</button></a>
                         @endauth
                     </div>
                 </div>

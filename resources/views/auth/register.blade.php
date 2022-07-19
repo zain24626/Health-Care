@@ -110,9 +110,10 @@
                                 </div>
 
 
+                                <a href="" id="anchor"> <button id="button" type="submit">Register</button></a>
 
 
-                                <div class="row text-center">
+                                {{-- <div class="row text-center">
                                     <div class="col-md-6">
                                         <a href="" id="anchor"> <button id="button" type="submit">Register As
                                                 Doctor</button></a>
@@ -122,7 +123,7 @@
                                                 Patient</button></a>
 
                                     </div>
-                                </div>
+                                </div> --}}
                             </form>
                         </div>
                     </div>
@@ -136,7 +137,7 @@
     </div>
     {{-- ====================================== Register as doctor ========================================= --}}
 
-    <div class="container-fluid" style="margin-top: 100px">
+    {{-- <div class="container-fluid" style="margin-top: 100px">
 
 
         <div class="row" id="signupform">
@@ -218,7 +219,6 @@
 
                                 <div class="row text-center">
                                     <div class="col-md-12">
-                                        {{-- <button class="signupformBtn">Register As Doctor</button> --}}
                                         <a href="" id="anchor"> <button id="button" type="submit">Register</button></a>
                                     </div>
                                     
@@ -233,10 +233,10 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
     {{-- ====================================== Register as patient ========================================= --}}
 
-    <div class="container-fluid" style="margin-top: 100px">
+    {{-- <div class="container-fluid" style="margin-top: 100px">
 
 
         <div class="row" id="signupform">
@@ -310,7 +310,6 @@
 
                                 <div class="row text-center">
                                     <div class="col-md-12">
-                                        {{-- <button class="signupformBtn">Register As Doctor</button> --}}
                                         <a href="" id="anchor"> <button id="button" type="submit">Register</button></a>
                                     </div>
                                     
@@ -325,7 +324,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
 
 
 
