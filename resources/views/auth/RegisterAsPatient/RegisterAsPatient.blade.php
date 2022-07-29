@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="/MyCss/FormStyle.css">
+    {{-- <link rel="stylesheet" href="/MyCss/AdminCss/css/bootstrap.min.css"> --}}
+    <!----css3---->
+    <link rel="stylesheet" href="/MyCss/AdminCss/css/custom.css">
     {{-- ====================================== Register as patient ========================================= --}}
 
     <div class="container-fluid" style="margin-top: 100px">
@@ -14,7 +18,7 @@
                     <div class="signup-div " style="margin-left: ;">
                         <div class="title signuptitle-div">Personal Information</div>
                         <div class="signup-in">
-                            <form action="{{ route('register') }}" method="POST">
+                            <form action="{{ route('patientregistered') }}" method="POST">
                                 @csrf
                                 <div class="row ">
                                     <div class="col-md-6">
@@ -38,9 +42,10 @@
                                             <label>Select City</label>
                                             <select name="city" style="border: none" class="username w-100 p-2">
                                                 <option></option>
-                                                <option value="Karachi">Karachi</option>
-                                                <option value="Lahore">Lahore</option>
-                                                <option value="Islamabad">Islamabad</option>
+                                                @foreach ($CITIES as $cities )
+                                                <option value='{{$cities->id}}'>{{$cities->name}}</option>
+                                                @endforeach
+                                                
                                             </select>
                                         </div>
                                     </div>
@@ -56,7 +61,7 @@
 
                                 <div class="row">
                                     
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
 
                                         <label>Gender</label> <br>
 
@@ -68,6 +73,14 @@
 
 
                                     </div>
+                                    {{-- <div class="col-md-6">
+
+                                        <label>Upload Your Image</label> <br>
+
+                                       <input type="file" name="img">
+
+
+                                    </div> --}}
                                    
                                 </div>
 

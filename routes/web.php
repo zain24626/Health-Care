@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('Home.index');
-});
+// Route::get('/', function () {
+//     return view('Home.index');
+// });
 Route::get('/news', function () {
     return view('News.News');
 });
@@ -39,9 +39,9 @@ Route::get('/diseases', function () {
 Route::get('/inventions', function () {
     return view('Inventions.Inventions');
 });
-Route::get('/search', function () {
-    return view('SearchedDoctors.SearchedDoctors');
-});
+// Route::get('/search', function () {
+//     return view('SearchedDoctors.SearchedDoctors');
+// });
 
 Route::get('/register', function () {
     return view('auth.register');
@@ -49,18 +49,18 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('auth.login');
 });
-Route::get('/dash', function () {
-    return view('Dashboard.Dashboard');
-});
+// Route::get('/dash', function () {
+//     return view('Dashboard.Dashboard');
+// });
 Route::get('/Appointment', function () {
     return view('Appointment.Apointment');
 });
 Route::get('/schedule', function () {
     return view('Schedule.Schedule');
 });
-Route::get('/info', function () {
-    return view('DoctorInfo.DoctorInfo');
-});
+// Route::get('/info', function () {
+//     return view('DoctorInfo.DoctorInfo');
+// });
 Route::get('/registerasdoctor', function () {
     return view('auth.RegisterAsDoctor.RegisterAsDoctor');
 });
@@ -71,5 +71,14 @@ Route::get('/registeraspatient', function () {
 
 Auth::routes();
 
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('/');
+Route::get('/info', [App\Http\Controllers\InfoController::class, 'index'])->name('/info');
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->name('/search');
+Route::get('/dash', [App\Http\Controllers\AdminController::class, 'index'])->name('/dash');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/dash', [AdminController::class, 'index'])->name('dash');
+Route::get('registerasdoctor', [App\Http\Controllers\RegisterAsDoctorController::class, 'registerDoctorView'])->name('registerasdoctor');
+Route::post('doctorregistered', [App\Http\Controllers\RegisterAsDoctorController::class, 'createDoctor'])->name('doctorregistered');
+
+Route::get('registeraspatient', [App\Http\Controllers\RegisterAsPatientController::class, 'registerPatientView'])->name('registeraspatient');
+Route::post('patientregistered', [App\Http\Controllers\RegisterAsPatientController::class, 'createPatient'])->name('patientregistered');

@@ -24,25 +24,10 @@
                     <div class="col-md-6 ">
                         <div>
                             @foreach ($result as $row)
-                                <h3 style="font-family: serif; color: #f44718">{{ $row->username }}</h3>
+
+                            <h3 style="font-family: serif; color: #f44718">{{$row->patientsusername}}</h3>
                             @endforeach
 
-                          
-                                <div class="d-flex" id="doctorinfohide" style="display: none">
-                                    <h6 id="cardText"> Qualification's </h6>
-                                    <span id="cardDetails" class="ml-1"> | MBBS | MCPS </span>
-                                </div>
-
-
-
-                                <div class="d-flex ">
-                                    <h6 class="" id="cardText"> Specialist In : </h6>
-                                    @foreach ($result as $row)
-                                        <p id="cardDetails" class="ml-1">{{ $row->docspecialization }}</p>
-                                    @endforeach
-
-
-                                </div>
 
                         </div>
                     </div>
@@ -75,7 +60,8 @@
                             <h6 class="ml-2"> Address: </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->docaddress }}</p>
+
+                                <p style="margin-left:8px">{{$row->patientsaddress}}</p>
                                 @endforeach
 
                             </div>
@@ -85,18 +71,20 @@
                             <h6 class="ml-2"> E-Mail : </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->useremail }}</p>
+
+                                <p style="margin-left:8px">{{$row->patientsuseremail}}</p>
                                 @endforeach
 
                             </div>
                         </div>
-
+                        
                         <div class="d-flex ml-3">
                             <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
                             <h6 class="ml-2"> Phone : </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->docphone }}</p>
+
+                                <p style="margin-left:8px">{{$row->patientsphone}}</p>
                                 @endforeach
 
                             </div>
@@ -106,7 +94,8 @@
                             <h6 class="ml-2"> Age : </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->docage }}</p>
+
+                                <p style="margin-left:8px">{{$row->patientsage}}</p>
                                 @endforeach
 
                             </div>
@@ -116,7 +105,8 @@
                             <h6 class="ml-2"> City : </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->cityname }}</p>
+
+                                <p style="margin-left:8px">{{$row->cityname}}</p>
                                 @endforeach
 
                             </div>
@@ -128,7 +118,8 @@
                             <h6 class="ml-2"> Gender : </h6>
                             <div>
                                 @foreach ($result as $row)
-                                    <p style="margin-left:8px">{{ $row->docgender }}</p>
+
+                                <p style="margin-left:8px">{{$row->patientsgender}}</p>
                                 @endforeach
 
                             </div>
@@ -138,66 +129,6 @@
 
 
                 </div>
-
-
-
-
-                {{-- @*============= Qualification ==========*@ --}}
-
-
-                <div class="col-md-4">
-                    <div class="shadow p-3 text-center" style=" border-radius:15px">
-                        <h4 style="  " id="cardText"> Schedule </h4>
-                    </div>
-                    <div style="background: #ecf0f3 ; padding:15px; margin-top:20px">
-
-
-                        <div class="d-flex ml-3 mt-3">
-                            <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
-                            <p style="margin-left:8px">
-                            <p>
-                                <span> </span>
-                            </p>
-
-                        </div>
-                        <div class="d-flex ml-3 mt-3">
-                            <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
-                            <p style="margin-left:8px">
-                            <p>
-                                <span> </span>
-                            </p>
-
-                        </div>
-                        <div class="d-flex ml-3 mt-3">
-                            <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
-                            <p style="margin-left:8px">
-                            <p>
-                                <span> </span>
-                            </p>
-
-                        </div>
-                        <div class="d-flex ml-3 mt-3">
-                            <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
-                            <p style="margin-left:8px">
-                            <p>
-                                <span> </span>
-                            </p>
-
-                        </div>
-                        <div class="d-flex ml-3  mt-3">
-                            <i class="fas fa-angle-double-right mt-1" style="color: #f44718"></i>
-                            <p style="margin-left:8px">
-                            <p>
-                                <span> </span>
-                            </p>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-
 
 
 

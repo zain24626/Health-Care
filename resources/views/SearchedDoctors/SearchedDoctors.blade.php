@@ -16,7 +16,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="mt-4">
-                            <h4 style="font-family: serif; color: #f44718 " id="DocName">Dr. Asim khan</h4>
+                            @foreach ($result as $row )
+                            <h4 style="font-family: serif; color: #f44718 " id="DocName">{{$row->username}}</h4>
+                            @endforeach
                             <div class="d-flex w-100">
                                 <h5 id="cardText">Qualification : <span id="cardDetails"> MBBS , MCPS </span></h5>
                             </div>

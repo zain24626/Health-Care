@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('docqualifications', function (Blueprint $table) {
+        Schema::create('doc_qualifications', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('docid');
-            $table->foreign('docid')->references('id')->on('users');
+            $table->unsignedBigInteger('userid');
+            $table->foreign('userid')->references('id')->on('users');
             $table->unsignedBigInteger('qualificationid');
             $table->foreign('qualificationid')->references('id')->on('qualifications');
             $table->timestamps();

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -23,8 +22,8 @@
 
 </head>
 
-<body >
-   <h1>hello</h1>
+<body>
+    <h1>hello</h1>
     <title>dashboard </title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/MyCss/AdminCss/css/bootstrap.min.css">
@@ -36,11 +35,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!--google material icon-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-        
-    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
     <div class="wrapper">
@@ -48,32 +45,29 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-             
+
                 <img src="/AdminCss/img/img.jpg" style="border-radius: 100%;" class="sidebar__admin_image" />
                 <h4 class="pt-3" style="letter-spacing: 2px; line-height: 14px; ">MR.SHAHBAZ</h4>
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#" id="dashboard" class="dashboard"><i class="material-icons " id="icon"
-                            >apps</i><span>Dashboard</span></a>
+                    <a href="#" id="dashboard" class="dashboard"><i class="material-icons "
+                            id="icon">apps</i><span>Dashboard</span></a>
                 </li>
 
                 <li>
-                    <a href="#" id="doctors"><i class="fa-solid fa-user-group icon"
-                            ></i><span> Doctor's
+                    <a href="#" id="doctors"><i class="fa-solid fa-user-group icon"></i><span> Doctor's
                         </span></a>
                 </li>
 
                 <li>
-                    <a href="#" id="addDoctorBtn"><i class="fa-solid fa-user-plus icon"
-                            ></i><span> Add Doctor
+                    <a href="#" id="addDoctorBtn"><i class="fa-solid fa-user-plus icon"></i><span> Add Doctor
                         </span></a>
                 </li>
 
                 <li>
                     <a href="#" id="patientsBtn">
-                        <i class="fa-solid fa-hospital-user icon"
-                            ></i><span>Patient's</span></a>
+                        <i class="fa-solid fa-hospital-user icon"></i><span>Patient's</span></a>
                 </li>
                 <li>
                     <a href="#" id="scheduleBtn">
@@ -100,9 +94,9 @@
 
                         <a class="navbar-brand" href="#"> Dashboard </a>
 
-                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="material-icons">more_vert</span>
                         </button>
 
@@ -129,14 +123,14 @@
                         <div class="card card-stats " style="border-radius: 15px">
                             <div class="card-header">
                                 <div class="icon icon-warning">
-                                    <i class="fa-solid fa-user-group" id="dashicon" ></i>
+                                    <i class="fa-solid fa-user-group" id="dashicon"></i>
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="category"  ><strong>Doctor's</strong></p>
+                                <p class="category"><strong>Doctor's</strong></p>
                                 <h3 class="card-title">100</h3>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -151,7 +145,7 @@
                                 <p class="category"><strong>Patient's</strong></p>
                                 <h3 class="card-title">150</h3>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -260,304 +254,320 @@
                 {{-- ====================================== sign up form ========================================= --}}
 
 
-                
-    {{-- ====================================== sign up form ========================================= --}}
 
-    <div class="container-fluid" id="registerform" style="margin-top: 100px">
+                {{-- ====================================== sign up form ========================================= --}}
+
+                <div class="container-fluid" id="registerform" style="margin-top: 100px">
 
 
-        <div class="row" >
-            <div class="col-md-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
 
-                <div class="signupparentdiv d-flex justify-content-center">
+                            <div class="signupparentdiv d-flex justify-content-center">
 
-                    <div class="signup-div " style="margin-left: ;">
-                        <div class="title signuptitle-div">Create Your Account Here</div>
-                        <div class="signup-in">
-                            <form action="{{ route('register') }}" method="POST">
-                                @csrf
-                                <div class="row ">
-                                    <div class="col-md-6">
-                                        <label>{{ __('Name') }}</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" id="name" class="@error('name') is-invalid @enderror"
-                                                placeholder="Enter Your Name" name="name" value="{{ old('name') }}"
-                                                required autocomplete="name" autofocus>
+                                <div class="signup-div " style="margin-left: ;">
+                                    <div class="title signuptitle-div">Create Your Account Here</div>
+                                    <div class="signup-in">
+                                        <form action="{{ route('register') }}" method="POST">
+                                            @csrf
+                                            <div class="row ">
+                                                <div class="col-md-6">
+                                                    <label>{{ __('Name') }}</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" id="name"
+                                                            class="@error('name') is-invalid @enderror"
+                                                            placeholder="Enter Your Name" name="name"
+                                                            value="{{ old('name') }}" required autocomplete="name"
+                                                            autofocus>
 
-                                            @error('name')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
+                                                        @error('name')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
 
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>{{ __('Email Address') }}</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input id="email" type="email"
-                                                class="@error('email') is-invalid @enderror" name="email"
-                                                value="{{ old('email') }}" required autocomplete="email"
-                                                placeholder="Enter Your E-mail">
-                                            @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>{{ __('Email Address') }}</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input id="email" type="email"
+                                                            class="@error('email') is-invalid @enderror"
+                                                            name="email" value="{{ old('email') }}" required
+                                                            autocomplete="email" placeholder="Enter Your E-mail">
+                                                        @error('email')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Password</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input id="password" type="password"
+                                                            class="@error('password') is-invalid @enderror"
+                                                            name="password" required autocomplete="new-password"
+                                                            placeholder="Enter Your Password">
+                                                        @error('password')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Confirm Password</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input id="password-confirm" type="password" class=""
+                                                            name="password_confirmation" required
+                                                            autocomplete="new-password"
+                                                            placeholder="Confirm Password">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                            <div class="row text-center">
+                                                <div class="col-md-6">
+                                                    <a href="" id="anchor"> <button id="button"
+                                                            class="registerAsDoctor" type="submit"> Register As
+                                                            Doctor</button></a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <a href="" id="anchor"> <button id="button"
+                                                            class="registerAsPatient" type="submit">Register As
+                                                            Patient</button></a>
+
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Password</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input id="password" type="password"
-                                                class="@error('password') is-invalid @enderror" name="password" required
-                                                autocomplete="new-password" placeholder="Enter Your Password">
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Confirm Password</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input id="password-confirm" type="password" class=""
-                                                name="password_confirmation" required autocomplete="new-password"
-                                                placeholder="Confirm Password">
-                                        </div>
-                                    </div>
-                                   
-                                </div>
 
 
 
-
-                                <div class="row text-center">
-                                    <div class="col-md-6">
-                                        <a href="" id="anchor"> <button id="button" class="registerAsDoctor" type="submit"> Register As
-                                                Doctor</button></a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="" id="anchor"> <button id="button" class="registerAsPatient" type="submit">Register As
-                                                Patient</button></a>
-
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
-
-
                 </div>
-            </div>
-        </div>
+                {{-- ====================================== Register as doctor ========================================= --}}
 
-    </div>
-    {{-- ====================================== Register as doctor ========================================= --}}
-
-    <div class="container-fluid" id="registerAsDoctor" style="margin-top: 100px">
+                <div class="container-fluid" id="registerAsDoctor" style="margin-top: 100px">
 
 
-        <div class="row" >
-            <div class="col-md-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
 
-                <div class="signupparentdiv d-flex justify-content-center">
+                            <div class="signupparentdiv d-flex justify-content-center">
 
-                    <div class="signup-div " style="margin-left: ;">
-                        <div class="title signuptitle-div">Personal Information</div>
-                        <div class="signup-in">
-                            <form action="{{ route('register') }}" method="POST">
-                                @csrf
-                                <div class="row ">
-                                    <div class="col-md-6">
-                                        <label>Address</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="address" placeholder="Enter Your Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Phone</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="phone" placeholder="Enter Your Phone No">
-                                        </div>
+                                <div class="signup-div " style="margin-left: ;">
+                                    <div class="title signuptitle-div">Personal Information</div>
+                                    <div class="signup-in">
+                                        <form action="{{ route('register') }}" method="POST">
+                                            @csrf
+                                            <div class="row ">
+                                                <div class="col-md-6">
+                                                    <label>Address</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="address"
+                                                            placeholder="Enter Your Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Phone</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="phone"
+                                                            placeholder="Enter Your Phone No">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label>Select City</label>
+                                                        <select name="city" style="border: none"
+                                                            class="username w-100 p-2">
+                                                            <option></option>
+                                                            <option value="Karachi">Karachi</option>
+                                                            <option value="Lahore">Lahore</option>
+                                                            <option value="Islamabad">Islamabad</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Age</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="age" placeholder="Age">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+
+                                                    <label>Gender</label> <br>
+
+                                                    <select name="gender" style="border: none"
+                                                        class="username w-100 p-2">
+                                                        <option></option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                    </select>
+
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Specialization</label> <br>
+
+                                                    <select name="specialization" style="border: none"
+                                                        class="username w-100 p-2">
+                                                        <option></option>
+                                                        <option value=1>Cardiologist</option>
+                                                        <option value=2>Audiologist</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                            <div class="row text-center">
+                                                <div class="col-md-12">
+                                                    {{-- <button class="signupformBtn">Register As Doctor</button> --}}
+                                                    <a href="" id="anchor"> <button id="button"
+                                                            type="submit">Register</button></a>
+                                                </div>
+
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div>
-                                            <label>Select City</label>
-                                            <select name="city" style="border: none" class="username w-100 p-2">
-                                                <option></option>
-                                                <option value="Karachi">Karachi</option>
-                                                <option value="Lahore">Lahore</option>
-                                                <option value="Islamabad">Islamabad</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Age</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="age" placeholder="Age">
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-
-                                <div class="row">
-                                    
-                                    <div class="col-md-6">
-
-                                        <label>Gender</label> <br>
-
-                                        <select name="gender" style="border: none" class="username w-100 p-2">
-                                            <option></option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
-
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Specialization</label> <br>
-
-                                        <select name="specialization" style="border: none"  class="username w-100 p-2">
-                                            <option></option>
-                                            <option value=1>Cardiologist</option>
-                                            <option value=2>Audiologist</option>
-                                        </select>
-                                    </div>
-                                </div>
 
 
 
-                           
-
-                                <div class="row text-center">
-                                    <div class="col-md-12">
-                                        {{-- <button class="signupformBtn">Register As Doctor</button> --}}
-                                        <a href="" id="anchor"> <button id="button" type="submit">Register</button></a>
-                                    </div>
-                                    
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
-
-
                 </div>
-            </div>
-        </div>
+                {{-- ====================================== Register as patient ========================================= --}}
 
-    </div>
-    {{-- ====================================== Register as patient ========================================= --}}
-
-    <div class="container-fluid" id="registerAsPatient" style="margin-top: 100px">
+                <div class="container-fluid" id="registerAsPatient" style="margin-top: 100px">
 
 
-        <div class="row" >
-            <div class="col-md-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
 
-                <div class="signupparentdiv d-flex justify-content-center">
+                            <div class="signupparentdiv d-flex justify-content-center">
 
-                    <div class="signup-div " style="margin-left: ;">
-                        <div class="title signuptitle-div">Personal Information</div>
-                        <div class="signup-in">
-                            <form action="{{ route('register') }}" method="POST">
-                                @csrf
-                                <div class="row ">
-                                    <div class="col-md-6">
-                                        <label>Address</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="address" placeholder="Enter Your Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Phone</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="phone" placeholder="Enter Your Phone No">
-                                        </div>
+                                <div class="signup-div " style="margin-left: ;">
+                                    <div class="title signuptitle-div">Personal Information</div>
+                                    <div class="signup-in">
+                                        <form action="{{ route('register') }}" method="POST">
+                                            @csrf
+                                            <div class="row ">
+                                                <div class="col-md-6">
+                                                    <label>Address</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="address"
+                                                            placeholder="Enter Your Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Phone</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="phone"
+                                                            placeholder="Enter Your Phone No">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label>Select City</label>
+                                                        <select name="city" style="border: none"
+                                                            class="username w-100 p-2">
+                                                            <option></option>
+                                                            <option value="Karachi">Karachi</option>
+                                                            <option value="Lahore">Lahore</option>
+                                                            <option value="Islamabad">Islamabad</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Age</label>
+                                                    <div class="username">
+                                                        <i class="lni lni-user"></i>
+                                                        <input type="text" name="age" placeholder="Age">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-md-12">
+
+                                                    <label>Gender</label> <br>
+
+                                                    <select name="gender" style="border: none"
+                                                        class="username w-50 p-2">
+                                                        <option></option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                    </select>
+
+
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+                                            <div class="row text-center">
+                                                <div class="col-md-12">
+                                                    {{-- <button class="signupformBtn">Register As Doctor</button> --}}
+                                                    <a href="" id="anchor"> <button id="button"
+                                                            type="submit">Register</button></a>
+                                                </div>
+
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div>
-                                            <label>Select City</label>
-                                            <select name="city" style="border: none" class="username w-100 p-2">
-                                                <option></option>
-                                                <option value="Karachi">Karachi</option>
-                                                <option value="Lahore">Lahore</option>
-                                                <option value="Islamabad">Islamabad</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Age</label>
-                                        <div class="username">
-                                            <i class="lni lni-user"></i>
-                                            <input type="text" name="age" placeholder="Age">
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-
-                                <div class="row">
-                                    
-                                    <div class="col-md-12">
-
-                                        <label>Gender</label> <br>
-
-                                        <select name="gender" style="border: none" class="username w-50 p-2">
-                                            <option></option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
-
-
-                                    </div>
-                                   
-                                </div>
 
 
 
-                           
-
-                                <div class="row text-center">
-                                    <div class="col-md-12">
-                                        {{-- <button class="signupformBtn">Register As Doctor</button> --}}
-                                        <a href="" id="anchor"> <button id="button" type="submit">Register</button></a>
-                                    </div>
-                                    
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
-
-
                 </div>
-            </div>
-        </div>
-
-    </div>
 
 
 
-{{-- 
-                <div class="row" id="signupform">
+                {{-- <div class="row" id="signupform">
                     <div class="col-md-12 col-sm-6">
 
                         <div class="signupparentdiv d-flex justify-content-center">
@@ -714,30 +724,33 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <td></td>
+                                            @foreach ($USERS as $row)
                                             <tr>
-                                                <td><img src="" alt=""></td>
-                                                <td>Dr. shahbaz</td>
-                                                <td>shahbaz@gmail.com</td>
-                                                <td>shazi123</td>
-                                                <td>012345678</td>
-                                                <td>25</td>
-                                                <td>Male</td>
-                                                <td>Plot No. G-21/23, Block-8, Khaliquzzaman Road, Clifton، Block 8 Clifton
-                                                </td>
-                                                <td>Karachi</td>
-                                                <td>Cardiologist</td>
+                                                    <td><img src="" alt=""></td>
+                                                    <td>{{ $row->name}}</td>
+                                                    <td>{{ $row->email }}</td>
+                                                    {{-- <td>{{ $row->password }}</td> --}}
+                                                    <td>{{ $row->doctor->phone }}</td>
+                                                    <td>{{ $row->doctor->age }}</td>
+                                                    <td>{{ $row->doctor->gender }}</td>
+                                                    <td>{{ $row->doctor->address }}</td>
+                                                    {{-- <td>{{ $row->city->name }}</td> --}}
+                                                    <td>{{ $row->specialization->name}}</td>
+                                                    <td></td>
 
-                                                <td class="d-flex"> <button type="button" name="edit_button"
-                                                        id="editBtn"
-                                                        class="btn btn-warning btn-circle btn-sm edit_button">
-                                                        <i class="fa-solid fa-pen-to-square"></i>
-                                                    </button>
-                                                    <button type="button" name="edit_button"
-                                                        class="btn btn-danger btn-circle btn-sm edit_button ml-1">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
+                                                    <td class="d-flex"> <button type="button" name="edit_button"
+                                                            id="editBtn"
+                                                            class="btn btn-warning btn-circle btn-sm edit_button">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </button>
+                                                        <button type="button" name="edit_button"
+                                                            class="btn btn-danger btn-circle btn-sm edit_button ml-1">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
 
                                         </tbody>
                                     </table>
@@ -796,7 +809,8 @@
                                                 <td>012345678</td>
                                                 <td>25</td>
                                                 <td>Male</td>
-                                                <td>Plot No. G-21/23, Block-8, Khaliquzzaman Road, Clifton، Block 8 Clifton
+                                                <td>Plot No. G-21/23, Block-8, Khaliquzzaman Road, Clifton، Block 8
+                                                    Clifton
                                                 </td>
                                                 <td>Karachi</td>
 
@@ -899,8 +913,8 @@
             $("#registerAsDoctor").hide();
             $("#registerAsPatient").hide();
             $("#registerAsPatient").hide();
-                $("#registerAsDoctor").hide();
-                $("#registerform").hide();
+            $("#registerAsDoctor").hide();
+            $("#registerform").hide();
 
 
             $("#dashboard").click(function() {
@@ -974,7 +988,7 @@
                 $("#registerAsDoctor").show();
                 $("#registerAsPatient").hide();
                 $("#registerform").hide();
-                
+
             });
             $(".registerAsPatient").click(function() {
                 $("#registerAsPatient").show();
@@ -996,4 +1010,3 @@
 </body>
 
 </html>
-

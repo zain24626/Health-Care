@@ -55,7 +55,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                    <div class="col-md-8 d-flex align-items-center">
+                    <div class="col-md-7 d-flex align-items-center">
                         <div class="row w-100" id="navbar">
                             <div class="collapse navbar-collapse " id="collapsibleNavId">
 
@@ -75,7 +75,7 @@
                                         <li class="nav-item li hoverable"> <a class="nav-link  link" id="len3"
                                                 href="/contact">Contact</a> </li>
                                         <li class="nav-item li hoverable"> <a class="nav-link  link" id="len4"
-                                                href="/dashboard">Admin Dashboard</a> </li>
+                                                href="/dash">Admin Dashboard</a> </li>
 
                                     </div>
 
@@ -84,20 +84,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        @auth
-                            <form action="{{ route('logout') }}" method="POST" class="">
-                                <a href="{{ route('logout') }}" id="anchor"> <button id="button"
-                                        type="submit">Logout</button> </a>
+                    <div class="col-md-3 ">
 
-                                {{-- <a href=""> <button id="" type="submit">Logout</button></a> --}}
-                                @csrf
-                            </form>
-                        @else
-                            <a href="{{ route('register') }}" id="anchor"> <button id="button" type="submit">Sign
-                                    Up</button> </a>
-                            <a href="{{ route('login') }}" id="anchor"> <button id="button" type="submit">Sign In</button></a>
-                        @endauth
+                        <div class="row d-flex align-item-center">
+                            <div class="col-md-3 ">
+                                {{-- <img src="/About_Images/advisor2.jpg" style="border-radius:52% 48% 49% 51% / 50% 50% 50% 50% " height=""
+                                    width="100%" alt=""> --}}
+
+                            </div>
+                            <div class="col-md-6">
+                                @auth
+                                    <h6 class="text-dark mr-5 mt-3">{{ auth()->user()->name }}</h6>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="dropleft">
+                                        <button class="btn btn-secondary dropdown-toggle mt-4"
+                                            style="background-color: rgba(176, 195, 214, 0.76); border:none" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                        </button>
+                                        <div class="dropdown-menu text-center" style="margin-top: 80px; border:none"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <form action="{{ route('logout') }}" method="POST" class="">
+                                                <a class="dropdown-item" href="/info">Profile</a>
+                                                <a href="{{ route('logout') }}" id="anchor"> <button id="button"
+                                                        type="submit">Logout</button> </a>
+                                                @csrf
+                                            </form>
+                                        </div>
+                                    </div>
+                                    @else
+                                        <a href="{{ route('register') }}" id="anchor"> <button id="button" type="submit">Sign Up</button> </a>
+                                        <a href="{{ route('login') }}" id="anchor"> <button id="button" type="submit">Sign In</button></a>
+                                    @endauth
+
+                                </div>
+                        </div>
+
                     </div>
                 </div>
             </nav>

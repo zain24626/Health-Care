@@ -48,6 +48,7 @@
     </div>
     <div class="container">
 
+        <form action="/search" method="get">
         <div class="row" id="sec1">
             {{-- <div class="text-center w-100"> --}}
 
@@ -57,26 +58,28 @@
 
             </div>
             {{-- </div> --}}
-            <div class="col-md-2 " id="specialist">
 
-
-                <select class="inputstyle w-100 form-control mt-5  searchbox">
-                    <option>Specialist</option>
-                    <option value="Cadiologist">Cadiologist</option>
-                    <option value="Audiologist">Audiologist</option>
-                    <option value="Skin Specialist">Skin Specialist</option>
-                </select>
-
+                <div class="col-md-2 " id="specialist">
+                    
+                    
+                    <select  name="query" class="inputstyle w-100 form-control mt-5  searchbox">
+                        <option>Specialist</option>
+                        @foreach ($SPECIALIZATION as $specialization)
+                        <option value="{{$specialization->id}}">{{$specialization->name}}</option>
+                        @endforeach
+                    </select>
+                    
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control mt-5  searchbox" placeholder="Search...">
+                </div>
+                <div class="col-md-3">
+                    <a href="/search"> <button class="button w-50 mt-5 p-1"><i class="fa-solid fa-search icon"></i></button></a>
+                    
+                </div>
+                
             </div>
-            <div class="col-md-4">
-                <input type="text" class="form-control mt-5  searchbox" placeholder="Search...">
-            </div>
-            <div class="col-md-3">
-                <a href="/search"> <button class="button w-50 mt-5 p-1"><i class="fa-solid fa-search icon"></i></button></a>
-
-            </div>
-
-        </div>
+        </form>
 
     </div>
 
